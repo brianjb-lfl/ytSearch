@@ -24,7 +24,6 @@ function getDataFromApi(searchTerm, callback) {
 
 function renderResult(result) {
   const videoLink = "https://www.youtube.com/watch?v=" + result.id.videoId;
-  if(result.)
   console.log(videoLink);
   console.log('renderResults ran');
   console.log(result);
