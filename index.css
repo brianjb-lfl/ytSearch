@@ -1,6 +1,29 @@
 *{
   text-align: center;
+  background-color: #90c0d4;
 }
+h1{
+  font-family: "Arial Black";
+  font-weight: bold;
+}
+.make-red{
+  color: #FA320A;
+}
+h4, a:visited{
+  font-size: 25px;
+  color:#FA320A;
+
+
+}
+.js-query{
+  text-align: left;
+  padding: 1px;
+  height: 20px;
+  width: 120px;
+  background-color: white;
+}
+
+
 iframe {
 height: 28.125vw;
 width: 50vw;
