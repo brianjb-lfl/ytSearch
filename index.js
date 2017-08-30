@@ -24,6 +24,7 @@ function getDataFromApi(searchTerm, callback) {
 
 function renderResult(result) {
   const videoLink = "https://www.youtube.com/watch?v=" + result.id.videoId;
+  //if(result.)
   console.log(videoLink);
   console.log('renderResults ran');
   console.log(result);
@@ -45,7 +46,7 @@ function renderResult(result) {
 
 
 // CALLBACK
-function displayGitHubSearchData(data) {
+function displayYoutubeSearchData(data) {
   console.log('displayGitHubSearchData ran');
   const results = data.items.map((item, index) => renderResult(item));
   $('#js-search-results').html(results);
@@ -59,7 +60,7 @@ function watchSubmit() {
     const query = queryTarget.val();
     // clear out the input
     queryTarget.val("");
-    getDataFromApi(query, displayGitHubSearchData);
+    getDataFromApi(query, displayYoutubeSearchData);
   });
 }
 
