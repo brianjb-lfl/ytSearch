@@ -1,0 +1,179 @@
+https://www.googleapis.com/youtube/v3/search?metallica%20&part=snippet&q=metallica&type=video&key=AIzaSyBhQaLOXnfpvlGO65Nv2oN8YF8jBZU8pD4
+
+{
+"kind": "youtube#searchListResponse",
+"etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/RmxyQGfaKxgTR79AH5ivaVPAPF0\"",
+"nextPageToken": "CAUQAA",
+"regionCode": "US",
+"pageInfo": {
+"totalResults": 1000000,
+"resultsPerPage": 5
+},
+"items": [
+{
+"kind": "youtube#searchResult",
+"etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/8an_Wtt_Eev-snHxipIlBvZuLpc\"",
+"id": {
+"kind": "youtube#video",
+"videoId": "mhZWUD6hEj4"
+},
+"snippet": {
+"publishedAt": "2017-08-29T22:00:02.000Z",
+"channelId": "UCbulh9WdLtEXiooRcYK7SWw",
+"title": "Metallica: Master of Puppets (Deluxe Box Set) Unboxing Video",
+"description": "Join James as he takes his first look at the Remastered Deluxe Box Set of Master of Puppets. Pre-order the Remastered Deluxe Box Set of Master of Puppets at ...",
+"thumbnails": {
+"default": {
+"url": "https://i.ytimg.com/vi/mhZWUD6hEj4/default.jpg",
+"width": 120,
+"height": 90
+},
+"medium": {
+"url": "https://i.ytimg.com/vi/mhZWUD6hEj4/mqdefault.jpg",
+"width": 320,
+"height": 180
+},
+"high": {
+"url": "https://i.ytimg.com/vi/mhZWUD6hEj4/hqdefault.jpg",
+"width": 480,
+"height": 360
+}
+},
+"channelTitle": "MetallicaTV",
+"liveBroadcastContent": "none"
+}
+},
+{
+"kind": "youtube#searchResult",
+"etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/vJ9IN4uS8-3lLcpfx5cwTjVS6jU\"",
+"id": {
+"kind": "youtube#video",
+"videoId": "jtNrx1c3Xh8"
+},
+"snippet": {
+"publishedAt": "2017-08-29T22:00:01.000Z",
+"channelId": "UCbulh9WdLtEXiooRcYK7SWw",
+"title": "Metallica: Disposable Heroes (Remastered)",
+"description": "From the Remastered Edition of Master of Puppets, available everywhere on November 10th. Pre-order the Remastered Edition of Master of Puppets at ...",
+"thumbnails": {
+"default": {
+"url": "https://i.ytimg.com/vi/jtNrx1c3Xh8/default.jpg",
+"width": 120,
+"height": 90
+},
+"medium": {
+"url": "https://i.ytimg.com/vi/jtNrx1c3Xh8/mqdefault.jpg",
+"width": 320,
+"height": 180
+},
+"high": {
+"url": "https://i.ytimg.com/vi/jtNrx1c3Xh8/hqdefault.jpg",
+"width": 480,
+"height": 360
+}
+},
+"channelTitle": "MetallicaTV",
+"liveBroadcastContent": "none"
+}
+},
+{
+"kind": "youtube#searchResult",
+"etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/61lgjTr-YXEb8OM7Z1fE0Njw0Wg\"",
+"id": {
+"kind": "youtube#video",
+"videoId": "aWgdQJvnJWo"
+},
+"snippet": {
+"publishedAt": "2017-08-29T22:00:01.000Z",
+"channelId": "UCbulh9WdLtEXiooRcYK7SWw",
+"title": "Metallica: The Thing That Should Not Be (Live at the Aragon Ballroom)",
+"description": "Recorded live on May 25th, 1986 at the Aragon Ballroom in Chicago, IL. From the Remastered Deluxe Box Set & 3-CD Expanded Edition of Master of Puppets, ...",
+"thumbnails": {
+"default": {
+"url": "https://i.ytimg.com/vi/aWgdQJvnJWo/default.jpg",
+"width": 120,
+"height": 90
+},
+"medium": {
+"url": "https://i.ytimg.com/vi/aWgdQJvnJWo/mqdefault.jpg",
+"width": 320,
+"height": 180
+},
+"high": {
+"url": "https://i.ytimg.com/vi/aWgdQJvnJWo/hqdefault.jpg",
+"width": 480,
+"height": 360
+}
+},
+"channelTitle": "MetallicaTV",
+"liveBroadcastContent": "none"
+}
+},
+{
+"kind": "youtube#searchResult",
+"etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/kuTyn7Wr86UWnuCdf9NOFSq5FJI\"",
+"id": {
+"kind": "youtube#video",
+"videoId": "WM8bTdBs-cw"
+},
+"snippet": {
+"publishedAt": "2009-10-27T01:53:30.000Z",
+"channelId": "UCbulh9WdLtEXiooRcYK7SWw",
+"title": "Metallica - One [Official Music Video]",
+"description": "One [Official Music Video] From the album \"...And Justice For All\" Director: Bill Pope and Michael Salomon Filmed in December 1988 in Long Beach, CA Video ...",
+"thumbnails": {
+"default": {
+"url": "https://i.ytimg.com/vi/WM8bTdBs-cw/default.jpg",
+"width": 120,
+"height": 90
+},
+"medium": {
+"url": "https://i.ytimg.com/vi/WM8bTdBs-cw/mqdefault.jpg",
+"width": 320,
+"height": 180
+},
+"high": {
+"url": "https://i.ytimg.com/vi/WM8bTdBs-cw/hqdefault.jpg",
+"width": 480,
+"height": 360
+}
+},
+"channelTitle": "MetallicaTV",
+"liveBroadcastContent": "none"
+}
+},
+{
+"kind": "youtube#searchResult",
+"etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/6U4k9qxwmZg00TX9zhCXkEAO_sE\"",
+"id": {
+"kind": "youtube#video",
+"videoId": "CD-E-LDc384"
+},
+"snippet": {
+"publishedAt": "2012-03-19T20:34:06.000Z",
+"channelId": "UCbulh9WdLtEXiooRcYK7SWw",
+"title": "Metallica - Enter Sandman [Official Music Video]",
+"description": "Enter Sandman [Official Music Video] From the album \"Metallica\" Director: Wayne Isham Filmed in June 1991 in Los Angeles, CA Video Premiere Date: July 30, ...",
+"thumbnails": {
+"default": {
+"url": "https://i.ytimg.com/vi/CD-E-LDc384/default.jpg",
+"width": 120,
+"height": 90
+},
+"medium": {
+"url": "https://i.ytimg.com/vi/CD-E-LDc384/mqdefault.jpg",
+"width": 320,
+"height": 180
+},
+"high": {
+"url": "https://i.ytimg.com/vi/CD-E-LDc384/hqdefault.jpg",
+"width": 480,
+"height": 360
+}
+},
+"channelTitle": "MetallicaTV",
+"liveBroadcastContent": "none"
+}
+}
+]
+}
