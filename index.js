@@ -45,16 +45,17 @@ function renderResult(result) {
   console.log(result);
   if(result.id.videoId){
     return `
-      <div>
-        <a href="${videoLink}">
-          <img src="${result.snippet.thumbnails.medium.url}"/>
-        </a>
-        <div><h4>${result.snippet.title}</h4>
+    <div><a href="${videoLink}"><h4>${result.snippet.title}</h4></a>
+    </div>
+    <div class="lightboxright">
+      
         
-        </div>
+          <iframe  src="${"https://www.youtube.com/embed/" + result.id.videoId}" frameborder="0" allowfullscreen></iframe>
+        
+        
       </div>
     `;
-  }
+  } // <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wswxQ3mhwqQ" frameborder="0" allowfullscreen></iframe>
 
   if(result.id.channelId){
     //chanTitle.forEach( val => cT += val);

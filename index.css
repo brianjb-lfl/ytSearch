@@ -1,7 +1,37 @@
-img{
-  display: inline-block;
+*{
+  text-align: center;
+}
+iframe {
+height: 28.125vw;
+width: 50vw;
+}
+.lightboxcontainer {
+  width:100%;
+  text-align:left;
+}
+.lightboxleft {
+  width: 40%;
+  float:left;
+}
+.lightboxright {
+  float: center;
+}
+.lightboxright iframe {
+  min-height: 390px;
+  max-height: 700px;
+}
+.divtext {
+  margin: 36px;
+}
+@media (max-width: 800px) {
+  .lightboxleft {
+    width: 100%;
+  }
+  .lightboxright {
+    width: 100%;
+  }
+  .divtext {
+    margin: 12px;
+  }
 }
 
-.hidden{
-  display: none;
-}
