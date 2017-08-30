@@ -1,5 +1,11 @@
 'use strict';
 
+const STORE = {
+  query: null,  
+  results: {}
+}
+
+
 const YOUTUBE_SEARCH_URL = 'https://www.googleapis.com/youtube/v3/search';
 const KEY = 'AIzaSyBhQaLOXnfpvlGO65Nv2oN8YF8jBZU8pD4';
 
@@ -23,14 +29,38 @@ function getDataFromApi(searchTerm, callback) {
 }
 
 function renderResult(result) {
+  let cT = result.snippet.channelTitle;
+  cT = cT.split(/[ ,]+/);
+  cT = cT.join('');
   const videoLink = "https://www.youtube.com/watch?v=" + result.id.videoId;
+  // const title = result.snippet.channelTitle;
+  // const chanTitle = title.split(" ");
+  // const channelLink = "https://www.youtube.com/user/" + cT;
+  const channelLink = "https://www.youtube.com/user/" + cT;
+
+
   //if(result.)
   console.log(videoLink);
   console.log('renderResults ran');
   console.log(result);
-  return `
+  if(result.id.videoId){
+    return `
+      <div>
+        <a href="${videoLink}">
+          <img src="${result.snippet.thumbnails.medium.url}"/>
+        </a>
+        <div><h4>${result.snippet.title}</h4>
+        
+        </div>
+      </div>
+    `;
+  }
+
+  if(result.id.channelId){
+    //chanTitle.forEach( val => cT += val);
+    return `
     <div>
-      <a href="${videoLink}">
+      <a href="${channelLink}">
         <img src="${result.snippet.thumbnails.medium.url}"/>
       </a>
       <div><h4>${result.snippet.title}</h4>
@@ -38,6 +68,7 @@ function renderResult(result) {
       </div>
     </div>
   `;
+  }
 }
 
 // <a class="js-result-name" href="${result.html_url}" target="_blank">${result.name}</a> by <a class="js-user-name" href="${result.owner.html_url}" target="_blank">${result.owner.login}</a></h2>
@@ -48,8 +79,9 @@ function renderResult(result) {
 // CALLBACK
 function displayYoutubeSearchData(data) {
   console.log('displayGitHubSearchData ran');
-  const results = data.items.map((item, index) => renderResult(item));
-  $('#js-search-results').html(results);
+  STORE.appState = 'results';
+  STORE.results = data.items.map((item, index) => renderResult(item));
+  $('#js-search-results').html(STORE.results);
 }
 
 function watchSubmit() {
@@ -57,10 +89,10 @@ function watchSubmit() {
     console.log('listener ran');
     event.preventDefault();
     const queryTarget = $(event.currentTarget).find('.js-query');
-    const query = queryTarget.val();
+    STORE.query = queryTarget.val();
     // clear out the input
     queryTarget.val("");
-    getDataFromApi(query, displayYoutubeSearchData);
+    getDataFromApi(STORE.query, displayYoutubeSearchData);
   });
 }
 
